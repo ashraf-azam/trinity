@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class ContactTableviewCell: UITableViewCell {
-    static let primaryOrange: UIColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0.09019607843, alpha: 1)
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var contactView: UIView!
@@ -17,7 +16,7 @@ class ContactTableviewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         contactView.layer.cornerRadius = contactView.frame.height / 2
-        contactView.backgroundColor = ContactTableviewCell.primaryOrange
+        contactView.backgroundColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0.09019607843, alpha: 1)
         nameLabel.font = .boldSystemFont(ofSize: 14)
     }
     

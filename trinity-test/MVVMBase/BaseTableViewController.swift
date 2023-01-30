@@ -1,0 +1,58 @@
+//
+//  BaseTableViewController.swift
+//  trinity-test
+//
+//  Created by Snappy on 30/01/2023.
+//
+
+import Foundation
+import Foundation
+import UIKit
+import RxSwift
+
+class BaseTableViewController<VM> : UITableViewController where VM : BaseViewModelType {
+    //MARK: State
+    var disposeBag = DisposeBag()
+    var viewModel: VM! {
+        didSet {
+            if let vm = viewModel {
+                vm.disposed(by: disposeBag)
+            }
+        }
+    }
+    //MARK: View Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+        setupTransformInput()
+        transform()
+        subscribe()
+    }
+
+    func dispose() {
+        self.dispose()
+    }
+    
+    deinit {
+    }
+    //MARK: setupView
+    func setupView() {
+    }
+    //MARK: transform
+    func setupTransformInput() {
+        
+    }
+    
+    func transform() {
+        viewModel.transform()
+    }
+    //MARK: subscribe
+    func subscribe() {
+        disposeBag.insert(
+        )
+    }
+    
+    var isNavigationBarHidden: Bool {
+        return false
+    }
+}

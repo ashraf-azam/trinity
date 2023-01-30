@@ -46,8 +46,14 @@ class ContactViewController: BaseViewController<ContactViewModel>, Storyboarded,
                 }
             }
         
+        let cardSelected = tableView.rx.modelSelected(Contact.self).subscribe(onNext: {
+            contact in
+            self.coordinator?.navigateToContactDetail(contact: contact)
+            })
+        
         disposeBag.insert(
-            cardBinding
+            cardBinding,
+            cardSelected
         )
     }
 }

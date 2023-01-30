@@ -23,12 +23,12 @@ class MainCoordinator: Coordinator {
         vc.viewModel = ContactViewModel()
         navigationController.pushViewController(vc, animated: true)
     }
-//
-//    func navigateToContactDetail(id: String) {
-//        let vc = ContactDetailViewController.instantiate()
-//        vc.intent = type
-//        vc.coordinator = self
+
+    func navigateToContactDetail(contact: Contact) {
+        let vc = ContactDetailViewController.instantiate()
+        vc.coordinator = self
+        vc.intent = contact
 //        vc.viewModel = ContactDetailViewModel()
-//        navigationController.pushViewController(vc, animated: true)
-//    }
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

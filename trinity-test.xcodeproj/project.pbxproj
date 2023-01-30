@@ -34,6 +34,7 @@
 		F485C7382987C810001D546C /* ContactTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485C7372987C810001D546C /* ContactTableviewCell.swift */; };
 		F485C73A2987C81C001D546C /* ContactTableviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485C7392987C81C001D546C /* ContactTableviewModel.swift */; };
 		F485C73C2987CCE1001D546C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485C73B2987CCE1001D546C /* HomeViewController.swift */; };
+		F485C73E2987D6E2001D546C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F485C73D2987D6E2001D546C /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		F485C7372987C810001D546C /* ContactTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableviewCell.swift; sourceTree = "<group>"; };
 		F485C7392987C81C001D546C /* ContactTableviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableviewModel.swift; sourceTree = "<group>"; };
 		F485C73B2987CCE1001D546C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F485C73D2987D6E2001D546C /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				F485C7182987C0EA001D546C /* BaseViewController.swift */,
 				F485C71A2987C110001D546C /* BaseViewModel.swift */,
 				F485C71C2987C197001D546C /* UIViewController+Rx.swift */,
+				F485C73D2987D6E2001D546C /* BaseTableViewController.swift */,
 			);
 			path = MVVMBase;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				F485C7302987C2BB001D546C /* MainCoordinator.swift in Sources */,
 				F485C7222987C255001D546C /* ContactViewController.swift in Sources */,
 				F485C7292987C277001D546C /* ContactDetailViewModel.swift in Sources */,
+				F485C73E2987D6E2001D546C /* BaseTableViewController.swift in Sources */,
 				F485C7162987C082001D546C /* Contacts.swift in Sources */,
 				F485C6E929877011001D546C /* ViewController.swift in Sources */,
 				F485C73A2987C81C001D546C /* ContactTableviewModel.swift in Sources */,
